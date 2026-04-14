@@ -55,3 +55,7 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Inherit from vendor blobs
 $(call inherit-product, vendor/sony/pdx237/pdx237-vendor.mk)
+
+# EuiccGoogle permissions fix
+PRODUCT_COPY_FILES += \
+    device/sony/pdx237/permissions/privapp-permissions-google-se.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-google-se.xml
