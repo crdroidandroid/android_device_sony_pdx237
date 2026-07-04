@@ -59,3 +59,15 @@ $(call inherit-product, vendor/sony/pdx237/pdx237-vendor.mk)
 # EuiccGoogle permissions fix
 PRODUCT_COPY_FILES += \
     device/sony/pdx237/permissions/privapp-permissions-google-se.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-google-se.xml
+
+# Sony Cinema Pro
+PRODUCT_PACKAGES += \
+    CinemaPro 
+
+# Sony Photo Pro
+PRODUCT_PACKAGES += \
+    PhotoPro 
+
+# Sony Video Pro    
+PRODUCT_PACKAGES += \
+    VideoPro 
